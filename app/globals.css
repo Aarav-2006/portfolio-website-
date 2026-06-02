@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  /* Color tokens — Warm Minimalist, No Accent */
+  --bg: #EFECE5;
+  --paper: #FBFAF7;
+  --ink: #0B0B0C;
+  --ink-soft: #2A2A2C;
+  --gray-1: #D9D6CF;
+  --gray-2: #A8A6A0;
+  --gray-3: #6E6C68;
+  --rule: rgba(11, 11, 12, 0.12);
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-48: 192px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gray-1: var(--gray-1);
+  --color-gray-2: var(--gray-2);
+  --color-gray-3: var(--gray-3);
+  --color-rule: var(--rule);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), Inter, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Subtle grid overlay — barely there */
+.grid-overlay {
+  background-image:
+    linear-gradient(to right, var(--gray-1) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--gray-1) 1px, transparent 1px);
+  background-size: 8px 8px;
+  opacity: 0.06;
+}
+
+/* Hairline rule */
+.hairline {
+  border-color: var(--rule);
+}
+
+/* Custom selection */
+::selection {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* Mono label utility */
+.mono-label {
+  font-family: var(--font-mono), "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Italic display headline */
+.display-italic {
+  font-family: var(--font-display), "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+}
+
+/* Upright display */
+.display {
+  font-family: var(--font-display), "Fraunces", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Disable text selection on UI chrome */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
