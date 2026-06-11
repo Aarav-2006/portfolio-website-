@@ -18,10 +18,10 @@ export default function Awards() {
       </div>
 
       <h2 className="display max-w-3xl text-ink text-[40px] leading-[1.05] md:text-[56px] lg:text-[72px]">
-        Things that
+        
         <br />
         <span className="italic" style={{ fontStyle: "italic" }}>
-          I am quietly proud of.
+          My Achievements 
         </span>
       </h2>
 

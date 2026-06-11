@@ -81,41 +81,47 @@ export const awards = [
   },
 ];
 
-export const experience = [
+export type ExperienceEntry = {
+  role: string;
+  org: string;
+  period: string;
+  did: string;
+  learned: string;
+  mattered: string;
+};
+
+export const experience: ExperienceEntry[] = [
   {
     role: "Student Intern",
     org: "Nippon India Mutual Fund",
     period: "Aug 2025 — present",
-    bullets: [
-      "Exploratory data analysis on real fund-house datasets.",
-      "Conducted a research report on the impact of robo-advisory on young investors in India.",
-    ],
+    did: "Conducted exploratory data analysis on real fund-house datasets and authored a research report on the impact of robo-advisory on young investors in India.",
+    learned: "How institutional data pipelines work in practice — and what it actually takes to translate raw financial data into insights that decision-makers act on.",
+    mattered: "My first exposure to production-grade financial data. It sharpened my instinct for what 'clean enough' means in the real world, which no classroom dataset ever does.",
   },
   {
     role: "Student Researcher",
     org: "Knowledge Map · Prof. Raghav Awasthy",
     period: "May 2025 — present",
-    bullets: [
-      "Building a queryable, visualisable course knowledge graph using Schema.org and RDF.",
-      "Exploring applications in recommendation systems, curriculum design, and AI tutoring.",
-    ],
+    did: "Building a queryable, visualisable course knowledge graph using Schema.org and RDF, with downstream applications in recommendation systems and AI tutoring.",
+    learned: "How to model knowledge structurally — moving from flat data to connected, semantically rich graphs that machines can actually reason over.",
+    mattered: "It forced me to think about information architecture at a level most ML work skips entirely. Structure isn't just formatting — it's intelligence.",
   },
   {
     role: "Member",
     org: "Plaksha Consulting Club (PCC)",
     period: "2024 — present",
-    bullets: [
-      "Attended seminars, represented the club in competitions (Plaksha Cricket League, Ashoka Case Competition).",
-    ],
+    did: "Competed in case competitions including the Ashoka Case Competition and represented PCC across cross-institutional events.",
+    learned: "How to structure ambiguous problems under time pressure — a skill that transfers directly into research, product thinking, and pitching ideas.",
+    mattered: "Pushed me to communicate technical thinking to non-technical audiences. Most engineers undervalue this. I'm trying not to.",
   },
   {
     role: "Member",
     org: "Kartavya Club",
     period: "Dec 2024 — May 2025",
-    bullets: [
-      "Participated in an initiative where neurodivergent children painted tote bags, fostering creativity and inclusion.",
-      "Contributed to fundraising by helping sell the tote bags to founders on Founders Day.",
-    ],
+    did: "Supported neurodivergent children in a tote-bag painting initiative and contributed to fundraising on Founders Day.",
+    learned: "That good work doesn't always look like code. Showing up consistently for people outside your usual context is its own form of building.",
+    mattered: "A reminder that the most important systems aren't always technical — sometimes they're human.",
   },
 ];
 

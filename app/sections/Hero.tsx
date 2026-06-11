@@ -81,13 +81,20 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="hidden items-center gap-6 md:flex"
             >
-              {["HOME", "WORK", "AWARDS", "CONTACT"].map((l) => (
+              {(
+                [
+                  { label: "HOME", href: "#top" },
+                  { label: "WORK", href: "#work" },
+                  { label: "AWARDS", href: "#awards" },
+                  { label: "CONTACT", href: "#contact" },
+                ] as const
+              ).map(({ label, href }) => (
                 <a
-                  key={l}
-                  href={`#${l.toLowerCase()}`}
+                  key={label}
+                  href={href}
                   className="mono-label text-ink transition-opacity hover:opacity-50"
                 >
-                  {l}
+                  {label}
                 </a>
               ))}
             </motion.nav>
@@ -168,7 +175,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="/Aarav_Jhawar_CV.pdf"
+                  href="Aarav_Jhawar _CV"
                   target="_blank"
                   rel="noreferrer"
                   data-cursor-hover

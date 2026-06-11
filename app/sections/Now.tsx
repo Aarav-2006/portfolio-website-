@@ -35,7 +35,7 @@ export default function Now() {
       </div>
 
       <h2 className="display max-w-3xl text-ink text-[40px] leading-[1.05] md:text-[56px] lg:text-[72px]">
-        Selected work.
+        My Projects
       </h2>
 
       <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border bg-rule md:mt-16 md:grid-cols-2">
