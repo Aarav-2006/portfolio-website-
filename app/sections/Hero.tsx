@@ -62,7 +62,7 @@ export default function Hero() {
           <CornerPlus className="absolute -bottom-px -right-px" />
 
           {/* Top row — wordmark + nav */}
-          <div className="flex items-center justify-between px-6 pt-6 md:px-10 md:pt-8">
+          <div className="relative z-20 flex items-center justify-between px-6 pt-6 md:px-10 md:pt-8">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
