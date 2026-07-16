@@ -6,7 +6,7 @@ export type Project = {
   status: "live" | "in-progress" | "archived";
   description: string; // the "so what"
   tags: string[];
-  repo: string;
+  repo?: string;
   isVenture?: boolean;
 };
 
@@ -33,6 +33,16 @@ export const projects: Project[] = [
       "A connected, intelligent course knowledge graph — queryable, visualisable, interoperable, and reusable. Built on Schema.org and RDF to link academic data with external educational ontologies and Linked Data sources, with downstream applications in recommendation systems and AI tutoring.",
     tags: ["RDF", "Schema.org", "Ontology", "Python"],
     repo: "https://github.com/Aarav-2006/Knowledge-map",
+  },
+  {
+    slug: "enterprise-ai-data-intelligence-platform",
+    title: "Enterprise AI Data Intelligence Platform (MCP)",
+    role: "Builder",
+    period: "Jun 2026 — Jul 2026",
+    status: "archived",
+    description:
+      "A secure Model Context Protocol (MCP) platform that lets LLMs like Claude interact with enterprise datasets through authenticated AI tools. Combines OAuth 2.1 (PKCE), JWT, MFA, and RBAC for enterprise-grade access control with an AI-driven pipeline that understands, transforms, and publishes sanitized datasets into PostgreSQL — exposed as a secure remote HTTP MCP server for Claude Desktop.",
+    tags: ["Python", "MCP", "OAuth 2.1", "PostgreSQL"],
   },
   {
     slug: "early-failure-prediction",
