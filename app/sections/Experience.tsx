@@ -16,16 +16,16 @@ export default function Experience() {
       className="relative z-10 mx-auto w-full max-w-[1320px] px-4 py-24 md:px-12 md:py-32"
     >
       <div className="mb-10 flex items-end justify-between md:mb-14">
-        <SectionLabel number="04" label="JOURNEY" />
+        <SectionLabel number="04" label="EXPERIENCE" />
         <span className="mono-label text-gray-3 hidden md:block">
-          WHERE I'VE BEEN
+          WHERE I'VE WORKED
         </span>
       </div>
 
       <h2 className="display max-w-3xl text-ink text-[40px] leading-[1.05] md:text-[56px] lg:text-[72px]">
         My{" "}
         <span className="italic" style={{ fontStyle: "italic" }}>
-          Journey.
+          Experience.
         </span>
       </h2>
 

@@ -102,6 +102,14 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
+    role: "AI Engineer Intern",
+    org: "Home First Finance",
+    period: "Aug 2025 — present",
+    did: "Built, as sole developer, a secure enterprise MCP platform (FastMCP, Starlette, PostgreSQL) that lets authenticated LLMs run the full dataset lifecycle — ingestion, profiling, business-rule generation, transformation, approval, publishing — behind a from-scratch OAuth 2.1 (PKCE), JWT, TOTP MFA, and RBAC security layer. Alongside it, shipped a production WebRTC conferencing platform, a RAG-based document intelligence system, a five-agent autonomous software-engineering platform, and a taxonomy gap analysis for HomeFirst's document-processing pipeline.",
+    learned: "How to design and secure a system end-to-end, not just make it work — building an authentication layer from scratch taught me the gap between code that runs and code that's safe to expose to an LLM client. Running several of these projects in parallel also taught me to scope ruthlessly and keep interfaces clean between them.",
+    mattered: "My first time owning production infrastructure alone, across multiple concurrent projects, with security treated as a first-class requirement rather than an afterthought. It reframed how I think about every system I build after it.",
+  },
+  {
     role: "Student Intern",
     org: "Nippon India Mutual Fund",
     period: "Aug 2025 — present",
