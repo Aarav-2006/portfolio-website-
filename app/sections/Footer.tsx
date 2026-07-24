@@ -26,7 +26,7 @@ export default function Footer() {
               Aarav Jhawar.
             </div>
             <p className="mono-label mt-3 text-gray-3">
-              © 2026 · BUILT IN PLAKSHA · DEPLOYED FROM EVERYWHERE
+              2026. BUILDING TOWARDS THE FUTURE
             </p>
           </div>
 

@@ -105,7 +105,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI Engineer Intern",
     org: "Home First Finance",
-    period: "Aug 2025–present",
+    period: "May 2026–Jul 2026",
     overview:
       "Sole developer across five engineering workstreams spanning enterprise AI infrastructure, protocol-level security, real-time systems, retrieval-augmented generation, and applied data taxonomy. Reported into three different mentors on parallel tracks.",
     highlights: [
@@ -125,7 +125,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Student Intern",
     org: "Nippon India Mutual Fund",
-    period: "Aug 2025–present",
+    period: "Jun 2023–Jul 2023",
     overview:
       "Conducted exploratory data analysis on real fund-house datasets and authored a research report on the impact of robo-advisory on young investors in India.",
     learned:
