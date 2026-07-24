@@ -147,7 +147,7 @@ export default function CompressionCaseStudy() {
             >
               <Meta label="ROLE" value="Founder · Solo builder" />
               <Meta label="STATUS" value="● Live venture" />
-              <Meta label="PERIOD" value="2025 — present" />
+              <Meta label="PERIOD" value="2025–present" />
               <Meta label="STACK" value="Python · PyTorch · EDA" />
             </motion.div>
           </div>
@@ -298,7 +298,7 @@ export default function CompressionCaseStudy() {
           platform's thesis. Hundreds of points, force-directed in 3D,
           connected by an underlying topology. On a 12-second cycle, the
           system compresses: ~70% of the points fade, the survivors pull
-          inward, but the topology — the structure that matters — stays
+          inward, but the topology (the structure that matters) stays
           intact. The form changes. The meaning doesn't.
         </p>
 

@@ -17,13 +17,13 @@ export default function Home() {
       <CornerCrosshairs />
 
       <Hero />
-      <ContactMe />
-      <SectionDivider />
       <Now />
+      <SectionDivider />
+      <Experience />
       <SectionDivider />
       <Awards />
       <SectionDivider />
-      <Experience />
+      <ContactMe />
       <Footer />
     </main>
   );

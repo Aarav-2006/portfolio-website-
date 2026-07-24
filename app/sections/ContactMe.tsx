@@ -122,7 +122,7 @@ export default function ContactMe() {
       className="relative z-10 mx-auto w-full max-w-[1320px] px-4 py-20 md:px-12 md:py-28"
     >
       <div className="mb-10 flex items-end justify-between md:mb-14">
-        <SectionLabel number="00" label="CONTACT" />
+        <SectionLabel number="04" label="CONTACT" />
         <span className="mono-label text-gray-3 hidden md:block">
           THE FAST WAY TO REACH ME
         </span>

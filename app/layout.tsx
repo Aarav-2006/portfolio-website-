@@ -24,7 +24,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aarav Jhawar — Connective Tissue",
+  title: "Aarav Jhawar | Connective Tissue",
   description:
     "AI engineer building the AI-Based Universal Compression Platform. Knowledge graphs, ML systems, and the connective tissue between data and intelligence.",
   openGraph: {

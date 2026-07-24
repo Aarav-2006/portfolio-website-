@@ -15,7 +15,7 @@ export const projects: Project[] = [
     slug: "universal-compression",
     title: "AI-Based Universal Compression Platform",
     role: "Founder / Solo Builder",
-    period: "2025 — present",
+    period: "2025–present",
     status: "live",
     description:
       "An AI-driven data compression platform focused on reducing storage and transmission costs while preserving task-level information fidelity. Targeting AI workloads and large-scale data systems where the trade-off between ratio, quality, and compute actually matters.",
@@ -27,10 +27,10 @@ export const projects: Project[] = [
     slug: "knowledge-map",
     title: "Knowledge Map",
     role: "Student Researcher · Prof. Raghav Awasthy",
-    period: "2025 — present",
+    period: "2025–present",
     status: "in-progress",
     description:
-      "A connected, intelligent course knowledge graph — queryable, visualisable, interoperable, and reusable. Built on Schema.org and RDF to link academic data with external educational ontologies and Linked Data sources, with downstream applications in recommendation systems and AI tutoring.",
+      "A connected, intelligent course knowledge graph that's queryable, visualisable, interoperable, and reusable. Built on Schema.org and RDF to link academic data with external educational ontologies and Linked Data sources, with downstream applications in recommendation systems and AI tutoring.",
     tags: ["RDF", "Schema.org", "Ontology", "Python"],
     repo: "https://github.com/Aarav-2006/Knowledge-map",
   },
@@ -38,20 +38,20 @@ export const projects: Project[] = [
     slug: "enterprise-ai-data-intelligence-platform",
     title: "Enterprise AI Data Intelligence Platform (MCP)",
     role: "Builder",
-    period: "Jun 2026 — Jul 2026",
+    period: "Jun 2026–Jul 2026",
     status: "archived",
     description:
-      "A secure Model Context Protocol (MCP) platform that lets LLMs like Claude interact with enterprise datasets through authenticated AI tools. Combines OAuth 2.1 (PKCE), JWT, MFA, and RBAC for enterprise-grade access control with an AI-driven pipeline that understands, transforms, and publishes sanitized datasets into PostgreSQL — exposed as a secure remote HTTP MCP server for Claude Desktop.",
+      "A secure Model Context Protocol (MCP) platform that lets LLMs like Claude interact with enterprise datasets through authenticated AI tools. Combines OAuth 2.1 (PKCE), JWT, MFA, and RBAC for enterprise-grade access control with an AI-driven pipeline that understands, transforms, and publishes sanitized datasets into PostgreSQL, exposed as a secure remote HTTP MCP server for Claude Desktop.",
     tags: ["Python", "MCP", "OAuth 2.1", "PostgreSQL"],
   },
   {
     slug: "early-failure-prediction",
     title: "Early Failure Prediction System",
     role: "Builder",
-    period: "Jan 2025 — May 2025",
+    period: "Jan 2025–May 2025",
     status: "archived",
     description:
-      "A probabilistic sequence model trained on the HDFS log dataset to predict system failures before they happen. Built end-to-end — preprocessing, modelling, evaluation — with a focus on early-window precision.",
+      "A probabilistic sequence model trained on the HDFS log dataset to predict system failures before they happen. Built end-to-end (preprocessing, modelling, evaluation) with a focus on early-window precision.",
     tags: ["Jupyter", "ML", "HDFS", "Probabilistic Models"],
     repo: "https://github.com/Aarav-2006/Early-Failure-Prediction-system",
   },
@@ -77,7 +77,7 @@ export const awards = [
   {
     title: "VC Capstone · Bhavish Sood",
     place: "2nd place",
-    body: "Conducted a VC-style investment analysis on a deep-tech defence startup — PMF, KPIs, market size, financial performance. Synthesised a final recommendation for a panel of VC professionals.",
+    body: "Conducted a VC-style investment analysis on a deep-tech defence startup, covering PMF, KPIs, market size, and financial performance. Synthesised a final recommendation for a panel of VC professionals.",
   },
   {
     title: "Casecade (PCC)",
@@ -95,7 +95,8 @@ export type ExperienceEntry = {
   role: string;
   org: string;
   period: string;
-  did: string;
+  overview: string;
+  highlights?: string[];
   learned: string;
   mattered: string;
 };
@@ -104,42 +105,33 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI Engineer Intern",
     org: "Home First Finance",
-    period: "Aug 2025 — present",
-    did: "Built, as sole developer, a secure enterprise MCP platform (FastMCP, Starlette, PostgreSQL) that lets authenticated LLMs run the full dataset lifecycle — ingestion, profiling, business-rule generation, transformation, approval, publishing — behind a from-scratch OAuth 2.1 (PKCE), JWT, TOTP MFA, and RBAC security layer. Alongside it, shipped a production WebRTC conferencing platform, a RAG-based document intelligence system, a five-agent autonomous software-engineering platform, and a taxonomy gap analysis for HomeFirst's document-processing pipeline.",
-    learned: "How to design and secure a system end-to-end, not just make it work — building an authentication layer from scratch taught me the gap between code that runs and code that's safe to expose to an LLM client. Running several of these projects in parallel also taught me to scope ruthlessly and keep interfaces clean between them.",
-    mattered: "My first time owning production infrastructure alone, across multiple concurrent projects, with security treated as a first-class requirement rather than an afterthought. It reframed how I think about every system I build after it.",
+    period: "Aug 2025–present",
+    overview:
+      "Sole developer across five engineering workstreams spanning enterprise AI infrastructure, protocol-level security, real-time systems, retrieval-augmented generation, and applied data taxonomy. Reported into three different mentors on parallel tracks.",
+    highlights: [
+      "Designed and built an enterprise MCP (Model Context Protocol) platform in Python, FastMCP, Starlette, and Uvicorn over PostgreSQL, exposing authenticated MCP tools that let Claude Desktop run a dataset's full lifecycle end to end: ingestion, profiling, business-rule generation, transformation planning, approval, and publishing.",
+      "Implemented a protocol-level authentication layer from the OAuth 2.1 specification, not a vendor SDK. It uses the Authorization Code Flow with PKCE, JWT access tokens, Google Authenticator TOTP-based MFA, and role-based access control to secure every MCP tool and OAuth endpoint.",
+      "Designed the relational schema and service-repository architecture (psycopg2 over PostgreSQL) covering users, roles, permissions, sessions, uploads, dataset understanding, and business rules, keeping planning, execution, approval, and publishing as independently auditable services.",
+      "Shipped a production-ready WebRTC video-conferencing platform (Django, React, Stream Video SDK) with invite-based meeting workflows, browser-native recording, responsive multi-participant layouts, and a Puppeteer suite for automated end-to-end testing.",
+      "Built an enterprise RAG platform (LangChain, FAISS, HuggingFace Sentence-Transformers, Gemini 2.5 Flash) that chunks and embeds uploaded PDFs into a semantic vector index and answers natural-language questions grounded strictly in retrieved context to minimize hallucination.",
+      "Architected a five-agent autonomous software-engineering system (FastAPI, Qdrant, Sentence-Transformers) made up of Requirements, Retrieval, Architecture, Validation, and Sandbox agents. It indexes a codebase, proposes implementation plans from retrieved context, and verifies generated code via automated sandbox compilation before it reaches a developer; validated against real-world repositories including Chatwoot.",
+      "Ran a production taxonomy and schema gap analysis for DocIQ, HomeFirst's document-processing platform, mapping document variants to reusable parent schemas, quantifying coverage against the production inventory, and prioritizing new-schema recommendations by document frequency.",
+    ],
+    learned:
+      "How to design and secure a system end-to-end rather than just make it work. Building OAuth 2.1 with PKCE and MFA from the specification, not a library, exposed exactly where code that runs differs from code that's safe to hand to an LLM client. Running five workstreams in parallel across three mentors also forced me to scope ruthlessly and keep interfaces clean between systems I couldn't hold in my head all at once.",
+    mattered:
+      "My first time owning production infrastructure alone, across multiple concurrent systems, with security and auditability treated as first-class requirements rather than afterthoughts. It reframed how I approach every system I've built since: the security boundary gets designed first, not bolted on last.",
   },
   {
     role: "Student Intern",
     org: "Nippon India Mutual Fund",
-    period: "Aug 2025 — present",
-    did: "Conducted exploratory data analysis on real fund-house datasets and authored a research report on the impact of robo-advisory on young investors in India.",
-    learned: "How institutional data pipelines work in practice — and what it actually takes to translate raw financial data into insights that decision-makers act on.",
-    mattered: "My first exposure to production-grade financial data. It sharpened my instinct for what 'clean enough' means in the real world, which no classroom dataset ever does.",
-  },
-  {
-    role: "Student Researcher",
-    org: "Knowledge Map · Prof. Raghav Awasthy",
-    period: "May 2025 — present",
-    did: "Building a queryable, visualisable course knowledge graph using Schema.org and RDF, with downstream applications in recommendation systems and AI tutoring.",
-    learned: "How to model knowledge structurally — moving from flat data to connected, semantically rich graphs that machines can actually reason over.",
-    mattered: "It forced me to think about information architecture at a level most ML work skips entirely. Structure isn't just formatting — it's intelligence.",
-  },
-  {
-    role: "Member",
-    org: "Plaksha Consulting Club (PCC)",
-    period: "2024 — present",
-    did: "Competed in case competitions including the Ashoka Case Competition and represented PCC across cross-institutional events.",
-    learned: "How to structure ambiguous problems under time pressure — a skill that transfers directly into research, product thinking, and pitching ideas.",
-    mattered: "Pushed me to communicate technical thinking to non-technical audiences. Most engineers undervalue this. I'm trying not to.",
-  },
-  {
-    role: "Member",
-    org: "Kartavya Club",
-    period: "Dec 2024 — May 2025",
-    did: "Supported neurodivergent children in a tote-bag painting initiative and contributed to fundraising on Founders Day.",
-    learned: "That good work doesn't always look like code. Showing up consistently for people outside your usual context is its own form of building.",
-    mattered: "A reminder that the most important systems aren't always technical — sometimes they're human.",
+    period: "Aug 2025–present",
+    overview:
+      "Conducted exploratory data analysis on real fund-house datasets and authored a research report on the impact of robo-advisory on young investors in India.",
+    learned:
+      "How institutional data pipelines work in practice, and what it actually takes to translate raw financial data into insights that decision-makers act on.",
+    mattered:
+      "My first exposure to production-grade financial data. It sharpened my instinct for what 'clean enough' means in the real world, which no classroom dataset ever does.",
   },
 ];
 

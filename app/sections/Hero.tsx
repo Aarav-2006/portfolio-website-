@@ -84,7 +84,8 @@ export default function Hero() {
               {(
                 [
                   { label: "HOME", href: "#top" },
-                  { label: "WORK", href: "#work" },
+                  { label: "PROJECTS", href: "#work" },
+                  { label: "EXPERIENCE", href: "#experience" },
                   { label: "AWARDS", href: "#awards" },
                   { label: "CONTACT", href: "#contact" },
                 ] as const

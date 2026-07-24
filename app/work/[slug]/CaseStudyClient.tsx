@@ -21,13 +21,13 @@ const projectVisuals: Record<
 > = {
   "knowledge-map": {
     title: "A graph that knows what it knows.",
-    body: "Schema.org and RDF give the data a spine. Linked Data sources give it a nervous system. The result is something you can query, visualise, and reuse — not just store.",
+    body: "Schema.org and RDF give the data a spine. Linked Data sources give it a nervous system. The result is something you can query, visualise, and reuse, not just store.",
     metric: "∞",
     metricLabel: "QUERIES POSSIBLE",
   },
   "early-failure-prediction": {
     title: "Predict the crash before the log does.",
-    body: "Probabilistic sequence modelling on the HDFS log dataset — trained to surface the early signals that precede failure, not just the symptoms that follow it.",
+    body: "Probabilistic sequence modelling on the HDFS log dataset, trained to surface the early signals that precede failure, not just the symptoms that follow it.",
     metric: "Early",
     metricLabel: "DETECTION WINDOW",
   },

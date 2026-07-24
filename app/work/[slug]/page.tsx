@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return { title: "Not Found" };
   return {
-    title: `${project.title} — Aarav Jhawar`,
+    title: `${project.title} | Aarav Jhawar`,
     description: project.description,
   };
 }

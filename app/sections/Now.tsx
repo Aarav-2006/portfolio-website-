@@ -28,9 +28,9 @@ export default function Now() {
       className="relative z-10 mx-auto w-full max-w-[1320px] px-4 py-24 md:px-12 md:py-32"
     >
       <div className="mb-10 flex items-end justify-between md:mb-14">
-        <SectionLabel number="01" label="WORK" />
+        <SectionLabel number="01" label="PROJECTS" />
         <span className="mono-label text-gray-3 hidden md:block">
-          {projects.length} PROJECTS · 2024 — 2025
+          {projects.length} PROJECTS · 2024–2025
         </span>
       </div>
 
