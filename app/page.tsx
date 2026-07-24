@@ -1,6 +1,7 @@
 import Cursor from "./components/Cursor";
 import CornerCrosshairs from "./components/CornerCrosshairs";
 import BackgroundLayer from "./components/BackgroundLayer";
+import CommandPalette from "./components/CommandPalette";
 import Hero from "./sections/Hero";
 import ContactMe from "./sections/ContactMe";
 import Now from "./sections/Now";
@@ -15,6 +16,7 @@ export default function Home() {
       <BackgroundLayer />
       <Cursor />
       <CornerCrosshairs />
+      <CommandPalette />
 
       <Hero />
       <Now />

@@ -176,7 +176,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="Aarav_Jhawar _CV"
+                  href="/Aarav_Jhawar _CV.pdf"
                   target="_blank"
                   rel="noreferrer"
                   data-cursor-hover
