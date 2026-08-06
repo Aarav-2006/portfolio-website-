@@ -175,6 +175,7 @@ export default function Hero() {
                   </span>
                 </a>
 
+                {/* Temporarily hidden — CV download disabled for now
                 <a
                   href="/Aarav_Jhawar _CV.pdf"
                   target="_blank"
@@ -197,6 +198,7 @@ export default function Hero() {
                   </svg>
                   <span className="mono-label text-ink">DOWNLOAD CV</span>
                 </a>
+                */}
 
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-ink" />

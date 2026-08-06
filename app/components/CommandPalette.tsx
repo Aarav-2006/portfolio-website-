@@ -64,6 +64,7 @@ export default function CommandPalette() {
       },
       { id: "awards", label: "Go to Awards", keywords: "achievements", action: () => goTo("#awards") },
       { id: "contact", label: "Go to Contact", keywords: "email get in touch", action: () => goTo("#contact") },
+      /* Temporarily hidden — CV download disabled for now
       {
         id: "cv",
         label: "Download CV",
@@ -76,6 +77,7 @@ export default function CommandPalette() {
           close();
         },
       },
+      */
       {
         id: "email",
         label: "Copy Email Address",
