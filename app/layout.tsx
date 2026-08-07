@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "1BFLxs-RileQUL2puImf2ppRRNe9o0f2JGW-U8u-Hfo",
+  },
   openGraph: {
     title: "Aarav Jhawar",
     description:
