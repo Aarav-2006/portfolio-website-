@@ -27,7 +27,7 @@ const SITE_URL = "https://aaravjhawar.is-a.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Aarav Jhawar | Connective Tissue",
+  title: "Aarav Jhawar | AI Engineer & Portfolio",
   description:
     "AI engineer building the AI-Based Universal Compression Platform. Knowledge graphs, ML systems, and the connective tissue between data and intelligence.",
   keywords: [
