@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "600"],
 });
 
-const SITE_URL = "https://portfolio-one-hazel-32.vercel.app";
+const SITE_URL = "https://aaravjhawar.is-a.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

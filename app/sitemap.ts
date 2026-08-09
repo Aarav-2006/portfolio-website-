@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "../lib/data";
 
-const BASE_URL = "https://portfolio-one-hazel-32.vercel.app";
+const BASE_URL = "https://aaravjhawar.is-a.dev";
 
 export const dynamic = "force-static";
 

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://portfolio-one-hazel-32.vercel.app/sitemap.xml",
+    sitemap: "https://aaravjhawar.is-a.dev/sitemap.xml",
   };
 }
