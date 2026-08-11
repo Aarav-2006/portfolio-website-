@@ -1,6 +1,6 @@
 # Aarav Jhawar Portfolio
 
-Live Website: https://portfolio-one-hazel-32.vercel.app
+Live Website: https://aaravjhawar.is-a.dev/
 
 ## Overview
 
