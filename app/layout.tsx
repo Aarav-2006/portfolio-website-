@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const display = Fraunces({
@@ -95,7 +96,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
-      <body className="min-h-full bg-bg text-ink">{children}</body>
+      <body className="min-h-full bg-bg text-ink">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
